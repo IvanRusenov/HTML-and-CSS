@@ -1,0 +1,40 @@
+html {
+    font: 20px "Times new roman",sans-serif;
+}
+
+header, main, aside, footer {
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    color: #000;
+}
+header, footer {
+    flex-basis: 100%;
+}
+
+main,aside {
+    min-height: 10em;
+}
+
+main {
+    flex: 1 50%;
+}
+
+aside {
+    flex: 1 50%;
+}
+
+.flex-container {
+    display: flex;
+    background-color: #eee;
+    padding: 5rem;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.inner-flex-container {
+    display: flex;
+    flex: auto;
+    gap: 2em;
+}
