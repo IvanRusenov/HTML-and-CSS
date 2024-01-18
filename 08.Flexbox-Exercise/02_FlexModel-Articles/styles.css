@@ -1,0 +1,23 @@
+html {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    line-height: 1.2;
+}
+.flex-container {
+    display: flex;
+    
+    max-width: 70vw;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
