@@ -1,0 +1,80 @@
+main {
+    background-image: url(images/background.jpg);
+}
+
+main {
+    display: flex;
+    max-width: 80%;
+    margin: 10px 0 10px 10px;
+    min-height: 90vh;
+    min-width: 95%;
+}
+
+section {
+    display: flex;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* span {
+    padding: 10px;
+} */
+
+.left {
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.right {
+    flex-basis: 20%;
+}
+
+.stanley, .friday {
+    display: flex;
+}
+
+.stanley {
+    min-height: 20em;
+    display: flex;
+    margin: 10px;
+    align-items: stretch;
+}
+
+.inner-section-stanley-left {
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.inner-section-stanley-right {
+    background-color: white;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.inner-section-left{
+    flex-direction: column;
+    background-color: white;
+    margin: 10px 0 10px 10px;
+    padding: 30px;
+}
+
+.inner-section-right {
+    align-items: center;
+    background-color: white;
+    margin: 10px 10px 10px 0px;
+    padding: 30px;
+}
+
+/* .inner-section-left::before {
+    content: close-quote;
+} */
+
+
