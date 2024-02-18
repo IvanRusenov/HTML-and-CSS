@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-main:#ade2df;
+    --color-lightgrey:#f3f5fa;
+}
+
+
+html {
+    box-sizing: inherit;
+    font: 16px/1.3 "Inter", Arial, Helvetica, sans-serif ;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5em;
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.right span:last-child a {
+    background-color: var(--color-main);
+    padding: 1em 2em;
+    border-radius: 6px;
+}
+
+.sec1 {
+    text-align: center;
+    background-color: var(--color-main);
+}
+
+.sec1 h1 {
+    font-size: 3.5em;
+    padding-top: 2em;
+}
+
+.sec1 p {
+    padding: 1em 0;
+}
+
+.sec1 .btn {
+    display: flex;
+    width: 50%;
+    padding:  1em 0 4em;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1em;
+}
+
+.btn button {
+    padding: 1em 3em;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+
+.btn button:first-child::before,
+.btn button:nth-child(2)::before {
+    font-family: "FontAwesome";
+    padding-right: 1em;
+}
+
+.btn button:first-child::before {
+    content: "\f179";
+}
+
+.btn button:nth-child(2)::before {
+    content: "\f17b";
+}
+
+
+.container {
+    display: flex;
+    padding: 6em 3em;
+    justify-content: center;
+    border-left: 1px solid gray;
+    border-right: 1px solid grey;
+}
+
+.container article {
+    padding: 0 2em;
+    text-align: center;
+}
+
+.container article:nth-child(2) {
+    padding: 0 2em;
+    border-left: 1px solid gray;
+    border-right: 1px solid grey;
+}
+
+.container article:first-child {
+    border-left: 1px solid grey;
+}
+
+.container article:last-child {
+    border-right: 1px solid grey;
+}
+
+.container p:first-child {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.container p:last-child {
+    padding-bottom: 2em;
+}
+
+
+.sec3 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-main);
+    padding: 0 15em;
+    gap: 2em;
+}
+
+.sec3 div {
+    max-height: 30em;
+}
+
+.sec3 div img {
+    border: 1px dashed grey;
+    padding-top: 2em;
+    max-width: 20em;
+}
+
+.sec3 div:first-child {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 50%;
+}
+
+.sec3 div:nth-child(2) {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: space-between;
+padding: 5em 1em;
+}
+
+.sec3 div:nth-child(2) p {
+    font-size: 14px;
+}
+
+.sec3 div:nth-child(2) p:nth-child(even){
+    font-weight: bold;
+}
+
+.sec3 a {
+    color: black;
+}
+.sec3 a::after {
+    font-family: "FontAwesome";
+    content: " \f061";
+}
+
+.sec4 {
+    min-height: 10em;
+    text-align: center;
+    background-color: var(--color-lightgrey);
+    padding-bottom: 2em;
+}
+
+.sec4 button {
+    padding: 1em 3em;
+    border-radius: 6px;
+}
+
+.sec4 h2 {
+    font-size: 3em;
+    padding: 1em 0;
+}
+
+.sec4 .content {
+    display: flex;
+    border-radius: 6px;
+    width: 100%;
+    min-height: 20em;
+}
+.sec4 .content .left {
+    background-color: white;
+}
+.sec4 .content .right {
+    background-color: var(--color-main);
+}
+
+.content .left,
+.content .right {
+    display: flex;
+    padding: 2em;
+}
+
+.content .right {
+    flex-direction: column;
+}
+
+.content .left ul li,
+.content .right ul li {
+    display: block;
+    font-size: 14px;
+}
+
+.content .left ul li:not(:last-child){
+    padding-bottom: 0.5em;
+}
+
+
+.content .left article,
+.content .right {
+    text-align: left;
+    padding: 0 1em;
+}
+
+.content .left article p:first-child,
+.content .right p:first-child {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.content .left article p:nth-child(3){
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1em 0;
+}
+.content .left article p span {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+.sec4 ul li::before {
+    font-family: "FontAwesome";
+    content: "\f00c";
+    padding-right: 0.5em;
+}
+
+.sec4 ul {
+    padding: 2em 0;
+}
+
+.sec4 > button {
+    background-color: var(--color-main);
+    margin-top: 3em;
+    border: none;
+}
+
+.sec4 article button {
+    width: 100%;
+    background-color: var(--color-main);
+}
+
+
+
+.sec4 .left article:nth-child(2) {
+    border-left: 1px solid gray;
+    border-right: 1px solid grey;
+}
+
+.sec4 .left div:first-child {
+    border-bottom: 1px solid grey;
+}
+
+.sec4 .right {
+    padding: 2em;
+}
+
+.sec4 .right button {
+    margin-top: auto;
+    background-color: black;
+    color: white;
+}
+
+.sec5 {
+    background-color: var(--color-main);
+
+}
+
+.sec5 .content {
+    text-align: center;
+    width: 40%;
+    min-height: 20em;
+    padding: 2em;
+    margin: 0 auto;
+}
+.sec5 .content h2 {
+    font-size: 3em;
+}
+
+.sec5 .content p {
+    padding-bottom: 2em;
+}
+
+.sec5 .content .btn {
+    display: flex;
+    gap: 1em;
+}
+
+footer {
+    background-color: var(--color-lightgrey);
+    padding: 1em 2em ;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav {
+    display: flex;
+    gap: 1em;
+}
+
