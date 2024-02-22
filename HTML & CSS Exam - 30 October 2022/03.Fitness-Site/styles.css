@@ -1,0 +1,132 @@
+:root {
+    --color-red:#d01919;
+    --color-gray:#efefef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font: 16px/1.3 Arial, sans-serif;
+}
+
+.red {
+    color: var(--color-red);
+}
+
+/* top */
+
+.site-header, .site-footer {
+    background-color: var(--color-red);
+}
+
+.site-header img {
+    width: 1em;
+    height: 0.8em;
+    filter: invert(1);
+}
+
+.top {
+    background-image: url(image/fitness-main.jpg);
+    min-height: 30em;
+    background-position: center;
+    background-size: cover;
+}
+
+header, .top {
+    color: white;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.site-header nav {
+    min-width: 5em;
+    justify-content: space-between;
+}
+
+.top-header .content {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em 3em;
+    gap: 1em;
+}
+
+.top > div {
+    display: flex;
+    flex-direction: column;
+    padding: 6em 5em;
+    text-align: center;
+    gap: 1em;
+    align-items: center ;
+}
+.top > div h1 {
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 0.4em;
+    margin-right: -0.4em;
+}
+
+.top > div button {
+    width:fit-content;
+    padding: 1em 2em;
+    color: white;
+    background-color: var(--color-red);
+    border-radius: 10px;
+}
+/* middle */
+.middle img {
+    width: 3em;
+    height: 3em;
+}
+.middle, .bottom {
+    text-align: center;
+}
+.middle h2, .bottom h2 {
+    padding: 1em;
+}
+
+.middle > span, .bottom span {
+    display: block;
+    border: 1px solid var(--color-red);
+    width: 3em;
+    margin: 0 auto;
+}
+
+.middle > div, .bottom-container {
+    display: flex;
+    padding: 1em 5em 3em;
+    gap: 5em;
+    text-align: center;
+    min-height: 15em;
+}
+
+.middle > div article, 
+.bottom-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    flex: 1 1 20%;
+}
+
+/* bottom */
+
+.bottom {
+    background-color: var(--color-gray);
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
