@@ -1,0 +1,50 @@
+@media (max-width:600px){
+    .navigation-nav  {
+        display: none;
+    }
+
+    .home-main {
+        padding-top: 2em;
+    }
+
+    .home-text {
+        display: none;
+    }
+
+    .home-tab-selector-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portofolio-card-speaker-card {
+        flex: 1 1 100%;
+    }
+
+    .home-max-width1 {
+        flex-direction: column;
+    }
+
+    .home-image-container {
+        display: none;
+    }
+    
+    .home-top-part {
+        flex-direction: column;
+    }
+
+    .home-links-container {
+        flex-direction: column;
+    }
+
+    .home-text10 {
+        margin-right: 0.5em;
+    }
+
+    .section-container {
+        padding: 2em 0;
+    }
+
+    .home-subscribe-container {
+        width: 100%;
+    }
+}
