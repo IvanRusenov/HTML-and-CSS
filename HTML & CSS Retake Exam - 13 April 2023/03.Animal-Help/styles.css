@@ -1,0 +1,272 @@
+html {
+    font: 16px/1.3 Arial, sans-serif;
+}
+body {
+    background-color: black;
+}
+
+.site {
+    margin: 0 2em;
+    padding: 1em 0;
+    background-color: white;
+}
+
+.site-header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.site-header .nav-left {
+    padding-left: 2em;
+}
+
+.site-header .nav-right {
+    display: flex;
+    gap: 1em;
+}
+
+.section1 {
+    display: flex;
+    background-color: #85dcff;
+    justify-content: center;
+    min-height: 20em;
+}
+
+.section1-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex: 1 1 70%;
+    justify-content: center;
+    padding: 5em;
+}
+
+.section1-left div:first-child {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.section1-left div:last-child button {
+    padding: 1em 2em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.section1-left div:last-child span {
+    display: flex;
+    gap: 2em;
+}
+
+.section1-left div:last-child span .left-button {
+    color: black;
+    background-color: white;
+}
+
+.section1-left div:last-child span .right-button {
+    color: white;
+    background-color: black;
+} 
+
+.section1-left div:last-child span .left-button,
+.section1-left div:last-child span .right-button {
+    flex: 1 1 50%;
+}
+.section1-left div:last-child span .left-button > span,
+.section1-left div:last-child span .right-button > span {
+    justify-content: center;
+}
+
+.section1-right {
+    display: flex;
+    flex: 1 1 30%;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 10em;
+}
+
+.section2 h2 {
+    padding: 2em;
+}
+
+.section3 {
+    margin-top: 2em ;
+    display: flex;
+    gap: 3em;
+    justify-content: space-evenly;
+}
+
+.section3 div {
+    flex: 1 1 20%;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section3 div p:nth-child(2) {
+    font-weight: bold;
+}
+
+.section3 div p:last-child {
+    margin-top: 2em;
+}
+
+.section4 {
+  text-align: center;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #85dcff;
+}
+
+.section4 .inner-container div {
+    display: flex;
+    gap: 1em;
+    padding: 1em 6em;
+}
+
+.section4 .inner-container div span {
+    flex: 1 1 30%;
+}
+
+.section4 button {
+    margin:  0 20em;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    padding: 0.5em 3em;
+}
+.section5 {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.section5 div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3em;
+}
+
+.section5 p {
+    padding-bottom: 1em;
+    font-size: 0.5em;
+}
+
+.section5 div img {
+    max-width: 20%;
+}
+
+.section6 {
+    /* padding: 1em 6em; */
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+
+}
+
+.section6 h2 {
+    padding: 0.5em;
+}
+
+.section6 .inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.inner-container article {
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.section6 .inner-container header {
+    background-color: #85dcff;
+    padding: 1em;
+    text-align: start;
+    border-radius: 6px 6px 0 0;
+
+}
+
+.section6 .inner-container article p {
+    font-weight: bold;
+
+}
+
+.section6 .inner-container article>p {
+    text-align: start;
+    padding: 1em;
+    font-size: 0.5em;
+}
+.section7 {
+    padding-top: 1em;
+}
+
+.section7 .inner-container {
+    display: flex;
+    align-items: center;
+}
+
+.section7 .inner-container .left {
+    max-width: 50%;
+}
+.section7 .inner-container .left img {
+    width: 100%;
+}
+
+.section7 .inner-container .right {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2em;
+  }
+  .section7 .inner-container .right button {
+    background-color: black;
+    color: white;
+    margin-top: 1em;
+    padding: 0.5em 2em;
+  }
+
+  .section7 .inner-container .right blockquote {
+    color: lightgray;
+    padding-top: 1em;
+    font-size: 0.5em;
+  }
+
+  .section7 .inner-container .right input {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+  }
+  .site-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 5em ;
+  }
+  .site-footer nav {
+    display: flex;
+    flex-grow: 1;
+    gap: 1em;
+  }
+  .site-footer nav a {
+    height: 2em;
+  }
+
+  .site-footer nav img {
+    display: block;
+   width: 100%;
+   height:2em;
+  }
+
+  .site-footer .right {
+    font-weight: bold;
+  }
+
+
+ 
