@@ -1,0 +1,178 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.site {
+    max-width: 100vw;
+    padding: 0 7.5em;
+}
+
+.img {
+    height: 52em;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5em;
+}
+
+.company {
+    position: absolute;
+    top: 2em;
+    left: 10em;
+    max-width: 13em;
+    box-shadow: 0 0 1em 0.2em gray;
+    padding: 2em 1em;
+}
+
+.company p {
+    padding-top: 1em;
+}
+
+.description {
+    max-width: 20em;
+    position: absolute;
+    right: 10em;
+    top: 15em;
+    background-color: #b8b2ad;
+    padding: 1em 1em 1em 0;
+    border-radius: 6px;
+    box-shadow: 0 0 1em 0.5em gray;
+    text-align: right;
+}
+
+.description p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.description::before {
+    content: open-quote;
+    color: grey;
+    font-size: 2em;
+}
+
+.content {
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 3em;
+    flex: 3 1 50%;
+    background-color: #f2f0f3;
+
+}
+
+.info .services h2 {
+    font-size: 3em;
+    text-transform:uppercase;
+    text-shadow: gray;
+    padding: 1em 0;
+}
+
+.services p {
+    padding-bottom: 1em;
+    font-size: 1em;
+}
+
+.services p::before {
+    font-family: "FontAwesome";
+    content: "\f0a9";
+}
+
+.services p span {
+    padding: 0 0.5em 0 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contacts h2 {
+    border-bottom: 2px solid gray;
+    margin-top: 1em;
+    font-size: 3em;
+}
+
+.contact-info {
+    padding: 1em 0;
+}
+
+.contact-info span {
+    display: inline-block;
+    padding-right: 1em;
+}
+
+.contact-info span::first-letter{
+    font-weight: bold;
+}
+
+.contact-form input {
+    padding: 1em;
+    width: 40%;
+    border-radius: 6px;
+    margin-right: 1em;
+    background-color: #bab1ad;
+    border: none;
+}
+
+.contact-form input::placeholder{
+    color: white;
+}
+
+.contact-form button {
+    padding: 1em 3em;
+    border-radius: 6px;
+    color: white;
+    background-color: #67784d;
+    border: none;
+}
+
+.statistics {
+    flex: 2 1 20%;
+    background-color: #bab1ad;
+    padding: 2em;
+}
+
+.statistics p:nth-child(odd){
+    font-size: 4em;
+    color: white;
+    font-weight: 100;
+}
+
+.statistics p:nth-child(even){
+    text-transform: uppercase;
+}
+
+.statistics p:nth-child(even):not(:last-child){
+    padding-bottom: 6em;
+}
+
+
+
