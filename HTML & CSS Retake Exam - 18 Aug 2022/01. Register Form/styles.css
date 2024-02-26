@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+.container {
+    background-image: url(images/background.png);
+    min-height: 100vh;
+    background-position: center;
+    position: relative;
+}
+
+.register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 20em;
+    background-image: url(images/form-background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.inner-area {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    gap: 1em;
+}
+
+.inner-area .names {
+    display: flex;
+    gap: 1em;
+}
+.inner-area .names input {
+    max-width: 50%;
+}
+
+.inner-area > input {
+   min-width: 14em;
+}
